@@ -5,8 +5,16 @@ Theme Version: 	1.7.0
 */
 html,
 body {
-	background: url(../images/habitten/Background.png);
+	background: #ecedf0;
 	width: 100%;
+}
+
+.sign {
+    background: url(../images/habitten/Background.png);
+}
+
+.msg-erro {
+    margin-top: 15px;
 }
 
 html {

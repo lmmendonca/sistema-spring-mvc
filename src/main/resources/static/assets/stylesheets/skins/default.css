@@ -1,7 +1,7 @@
 /* Base */
 a,
 .btn-link {
-	color: #0088cc;
+	color: #2d8a55;
 }
 
 a:hover,
@@ -86,11 +86,11 @@ a:active,
 }
 /* Sign Screens - Wrappers */
 .body-sign .panel-sign .panel-title-sign .title {
-	background-color: #0088cc;
+	background-color: #2d8a55;
 }
 
 .body-sign .panel-sign .panel-body {
-	border-top-color: #0088cc;
+	border-top-color: #2d8a55;
 }
 /* Lock Screen */
 .body-locked .current-user .user-image {
@@ -121,7 +121,7 @@ blockquote.primary {
 }
 
 .open > .dropdown-toggle.btn-primary {
-	background: #0088cc;
+	background: #2d8a55;
 	border-color: #0077b3;
 }
 
@@ -130,7 +130,7 @@ body .btn-primary.dropdown-toggle {
 }
 /* Select 2 */
 .select2-container--bootstrap .select2-results__option--highlighted[aria-selected] {
-	background-color: #0088cc;
+	background-color: #2d8a55;
 }
 
 .select2-container--bootstrap .select2-dropdown {
@@ -146,8 +146,8 @@ body .btn-primary.dropdown-toggle {
 body .btn-primary {
 	color: #ffffff;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-	background-color: #0088cc;
-	border-color: #0088cc;
+	background-color: #2d8a55;
+	border-color: #2d8a55;
 }
 
 body .btn-primary:hover {
