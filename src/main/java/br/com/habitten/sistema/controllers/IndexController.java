@@ -6,9 +6,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController {
 
-    @RequestMapping("/")
+    @RequestMapping("/login")
     String index(){
-        return "index";
+        return "login";
+    }
+
+    @RequestMapping("/relatorioVendas")
+    String relatorioVendas(){
+        return "vendas/relatorioVendas";
     }
 
 }
