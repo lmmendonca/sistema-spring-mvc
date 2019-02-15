@@ -1,4 +1,4 @@
-package br.com.habitten.sistema.models;
+package br.com.habitten.sistema.model;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

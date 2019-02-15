@@ -1,6 +1,6 @@
 package br.com.habitten.sistema.security;
 
-import br.com.habitten.sistema.models.Usuario;
+import br.com.habitten.sistema.model.Usuario;
 import br.com.habitten.sistema.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
