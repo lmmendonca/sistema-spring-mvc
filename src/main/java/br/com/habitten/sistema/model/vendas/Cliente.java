@@ -3,13 +3,12 @@ package br.com.habitten.sistema.model.vendas;
 import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
+
 
 @Entity
 public class Cliente implements Serializable {
@@ -34,7 +33,7 @@ public class Cliente implements Serializable {
 
   private Integer estado_civil;
 
-  @OneToOne(fetch = FetchType.LAZY)
+  @ManyToOne
   @JoinColumn(name = "conjugue_id")
   private Cliente conjugue;
 
@@ -44,7 +43,7 @@ public class Cliente implements Serializable {
 
   private String email;
 
-  @ManyToOne(fetch = FetchType.LAZY)
+  @ManyToOne
   @JoinColumn(name = "endereco_id")
   private Endereco endereco;
 
