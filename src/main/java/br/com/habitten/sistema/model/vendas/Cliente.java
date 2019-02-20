@@ -2,18 +2,21 @@ package br.com.habitten.sistema.model.vendas;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 
 
 @Entity
 public class Cliente implements Serializable {
 
-  private static final long serialVersionUID = 1L;
+  private static final long serialVersionUID = 2L;
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
@@ -48,6 +51,12 @@ public class Cliente implements Serializable {
   private Endereco endereco;
 
   private String proficao;
+
+  @ManyToMany
+  @JoinTable(name = "cliente_imovel", joinColumns =
+          {@JoinColumn(name = "cliente_id", referencedColumnName = "id")}, inverseJoinColumns =
+          {@JoinColumn(name = "imovel_id", referencedColumnName = "id")})
+  private List<Imovel> imoveis;
 
 
   public Long getId() {
@@ -161,4 +170,13 @@ public class Cliente implements Serializable {
   public void setProficao(String proficao) {
     this.proficao = proficao;
   }
+
+    public List<Imovel> getImoveis() {
+        return imoveis;
+    }
+
+    public void setImoveis(List<Imovel> imoveis) {
+        this.imoveis = imoveis;
+    }
 }
+
