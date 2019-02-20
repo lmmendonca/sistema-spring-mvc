@@ -1,5 +1,5 @@
 /target/
-/src/main/java/br/com/habitten/sistema/data
+/src/main/java/br/com/habitten/sistema/data/
 !.mvn/wrapper/maven-wrapper.jar
 
 ### STS ###
