@@ -16,7 +16,7 @@ public class ImovelResource {
     ImovelRepository imovelRepository;
 
     @RequestMapping("/listaimoveis")
-    public List<Imovel> listaImoveis(){
+    public List<Imovel> listaImoveis() {
         try {
             return imovelRepository.findAll();
         } catch (Exception e) {

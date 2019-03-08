@@ -2,11 +2,8 @@ package br.com.habitten.sistema;
 
 import static org.habitten.sistema.db.Tables.CLIENTE;
 
-import org.habitten.sistema.db.tables.Cliente;
 import org.jooq.DSLContext;
-import org.jooq.JSONFormat;
 import org.jooq.Record;
-import org.jooq.Result;
 import org.jooq.SQLDialect;
 import org.jooq.impl.DSL;
 import org.junit.Test;
