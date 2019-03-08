@@ -1,7 +1,6 @@
 // COMMON IMPORTS
 // -----------------------------------------------------------------------------
 @import "config/imports";
-
 // BASIC
 // -----------------------------------------------------------------------------
 @import "base/skeleton";
@@ -20,7 +19,6 @@
 @import "base/nanoscroll";
 @import "base/toolbar";
 @import "base/call_to_action";
-
 // GUI
 // -----------------------------------------------------------------------------
 @import "gui/loading_overlay";
@@ -33,7 +31,6 @@
 @import "gui/progress_bar";
 @import "gui/sidebar_widgets";
 @import "gui/scroll_to_top";
-
 // MODULES
 // -----------------------------------------------------------------------------
 @import "modules/ui-elements/panels";
@@ -78,15 +75,12 @@
 @import "modules/forms/codemirror";
 @import "modules/maps/gmaps";
 @import "modules/maps/jqvmap";
-
 // DASHBOARD
 // -----------------------------------------------------------------------------
 @import "modules/dashboard/index-landing";
-
 // MAILBOX
 // -----------------------------------------------------------------------------
 @import "modules/mailbox/mailbox";
-
 // PAGES
 // -----------------------------------------------------------------------------
 @import "modules/pages/invoice";
@@ -97,7 +91,6 @@
 @import "modules/pages/media-gallery";
 @import "modules/pages/log-viewer";
 @import "modules/pages/search-results";
-
 // SKINS
 // -----------------------------------------------------------------------------
 @import "skins/dark";

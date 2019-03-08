@@ -24,7 +24,7 @@ public class SistemaHabittenApplicationTests {
     }
 
     @Test
-    public void testeJooq(){
+    public void testeJooq() {
         String user = "postgres";
         String pass = "123";
         String url = "jdbc:postgresql://localhost:5432/habitten_sistema";
@@ -37,7 +37,7 @@ public class SistemaHabittenApplicationTests {
             String a = "";
             ctx.insertInto(CLIENTE,
                     CLIENTE.ID, CLIENTE.NOME, CLIENTE.SOBRENOME)
-                    .values((long) 2,"TESTE 1", "TESTE 1")
+                    .values((long) 2, "TESTE 1", "TESTE 1")
                     .values((long) 3, "TESTE 2", "TESTE 2")
                     .execute();
 

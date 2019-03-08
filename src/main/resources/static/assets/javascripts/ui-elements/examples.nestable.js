@@ -4,36 +4,36 @@ Written by: 	Okler Themes - (http://www.okler.net)
 Theme Version: 	1.7.0
 */
 
-(function($) {
+(function ($) {
 
-	'use strict';
-		
-	/*
-	Update Output
-	*/
-	var updateOutput = function (e) {
-		var list = e.length ? e : $(e.target),
-			output = list.data('output');
+  'use strict';
 
-		if (window.JSON) {
-			output.val(window.JSON.stringify(list.nestable('serialize')));
-		} else {
-			output.val('JSON browser support required for this demo.');
-		}
-	};
+  /*
+  Update Output
+  */
+  var updateOutput = function (e) {
+    var list = e.length ? e : $(e.target),
+      output = list.data('output');
 
-	/*
-	Nestable 1
-	*/
-	$('#nestable').nestable({
-		group: 1
-	}).on('change', updateOutput);
+    if (window.JSON) {
+      output.val(window.JSON.stringify(list.nestable('serialize')));
+    } else {
+      output.val('JSON browser support required for this demo.');
+    }
+  };
 
-	/*
-	Output Initial Serialised Data
-	*/
-	$(function() {
-		updateOutput($('#nestable').data('output', $('#nestable-output')));
-	});
+  /*
+  Nestable 1
+  */
+  $('#nestable').nestable({
+    group: 1
+  }).on('change', updateOutput);
+
+  /*
+  Output Initial Serialised Data
+  */
+  $(function () {
+    updateOutput($('#nestable').data('output', $('#nestable-output')));
+  });
 
 }).apply(this, [jQuery]);

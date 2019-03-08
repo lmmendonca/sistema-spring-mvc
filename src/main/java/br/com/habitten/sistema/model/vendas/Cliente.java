@@ -16,160 +16,160 @@ import javax.persistence.ManyToOne;
 @Entity
 public class Cliente implements Serializable {
 
-  private static final long serialVersionUID = 2L;
+    private static final long serialVersionUID = 2L;
 
-  @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
-  private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
-  private String nome;
+    private String nome;
 
-  private String sobrenome;
+    private String sobrenome;
 
-  private Date data_nascimento;
+    private Date data_nascimento;
 
-  private String rg;
+    private String rg;
 
-  private Long cpf;
+    private Long cpf;
 
-  private String nacionalidade;
+    private String nacionalidade;
 
-  private Integer estado_civil;
+    private Integer estado_civil;
 
-  @ManyToOne
-  @JoinColumn(name = "conjugue_id")
-  private Cliente conjugue;
+    @ManyToOne
+    @JoinColumn(name = "conjugue_id")
+    private Cliente conjugue;
 
-  private String telefone;
+    private String telefone;
 
-  private String celular;
+    private String celular;
 
-  private String email;
+    private String email;
 
-  @ManyToOne
-  @JoinColumn(name = "endereco_id")
-  private Endereco endereco;
+    @ManyToOne
+    @JoinColumn(name = "endereco_id")
+    private Endereco endereco;
 
-  private String proficao;
+    private String proficao;
 
-  @ManyToMany
-  @JoinTable(name = "cliente_imovel", joinColumns =
-          {@JoinColumn(name = "cliente_id", referencedColumnName = "id")}, inverseJoinColumns =
-          {@JoinColumn(name = "imovel_id", referencedColumnName = "id")})
-  private List<Imovel> imoveis;
+    @ManyToMany
+    @JoinTable(name = "cliente_imovel", joinColumns =
+            {@JoinColumn(name = "cliente_id", referencedColumnName = "id")}, inverseJoinColumns =
+            {@JoinColumn(name = "imovel_id", referencedColumnName = "id")})
+    private List<Imovel> imoveis;
 
 
-  public Long getId() {
-    return id;
-  }
+    public Long getId() {
+        return id;
+    }
 
-  public void setId(Long id) {
-    this.id = id;
-  }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-  public String getNome() {
-    return nome;
-  }
+    public String getNome() {
+        return nome;
+    }
 
-  public void setNome(String nome) {
-    this.nome = nome;
-  }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
-  public String getSobrenome() {
-    return sobrenome;
-  }
+    public String getSobrenome() {
+        return sobrenome;
+    }
 
-  public void setSobrenome(String sobrenome) {
-    this.sobrenome = sobrenome;
-  }
+    public void setSobrenome(String sobrenome) {
+        this.sobrenome = sobrenome;
+    }
 
-  public Date getData_nascimento() {
-    return data_nascimento;
-  }
+    public Date getData_nascimento() {
+        return data_nascimento;
+    }
 
-  public void setData_nascimento(Date data_nascimento) {
-    this.data_nascimento = data_nascimento;
-  }
+    public void setData_nascimento(Date data_nascimento) {
+        this.data_nascimento = data_nascimento;
+    }
 
-  public String getRg() {
-    return rg;
-  }
+    public String getRg() {
+        return rg;
+    }
 
-  public void setRg(String rg) {
-    this.rg = rg;
-  }
+    public void setRg(String rg) {
+        this.rg = rg;
+    }
 
-  public Long getCpf() {
-    return cpf;
-  }
+    public Long getCpf() {
+        return cpf;
+    }
 
-  public void setCpf(Long cpf) {
-    this.cpf = cpf;
-  }
+    public void setCpf(Long cpf) {
+        this.cpf = cpf;
+    }
 
-  public String getNacionalidade() {
-    return nacionalidade;
-  }
+    public String getNacionalidade() {
+        return nacionalidade;
+    }
 
-  public void setNacionalidade(String nacionalidade) {
-    this.nacionalidade = nacionalidade;
-  }
+    public void setNacionalidade(String nacionalidade) {
+        this.nacionalidade = nacionalidade;
+    }
 
-  public Integer getEstado_civil() {
-    return estado_civil;
-  }
+    public Integer getEstado_civil() {
+        return estado_civil;
+    }
 
-  public void setEstado_civil(Integer estado_civil) {
-    this.estado_civil = estado_civil;
-  }
+    public void setEstado_civil(Integer estado_civil) {
+        this.estado_civil = estado_civil;
+    }
 
-  public Cliente getConjugue() {
-    return conjugue;
-  }
+    public Cliente getConjugue() {
+        return conjugue;
+    }
 
-  public void setConjugue(Cliente conjugue) {
-    this.conjugue = conjugue;
-  }
+    public void setConjugue(Cliente conjugue) {
+        this.conjugue = conjugue;
+    }
 
-  public String getTelefone() {
-    return telefone;
-  }
+    public String getTelefone() {
+        return telefone;
+    }
 
-  public void setTelefone(String telefone) {
-    this.telefone = telefone;
-  }
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
 
-  public String getCelular() {
-    return celular;
-  }
+    public String getCelular() {
+        return celular;
+    }
 
-  public void setCelular(String celular) {
-    this.celular = celular;
-  }
+    public void setCelular(String celular) {
+        this.celular = celular;
+    }
 
-  public String getEmail() {
-    return email;
-  }
+    public String getEmail() {
+        return email;
+    }
 
-  public void setEmail(String email) {
-    this.email = email;
-  }
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
-  public Endereco getEndereco() {
-    return endereco;
-  }
+    public Endereco getEndereco() {
+        return endereco;
+    }
 
-  public void setEndereco(Endereco endereco) {
-    this.endereco = endereco;
-  }
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
 
-  public String getProficao() {
-    return proficao;
-  }
+    public String getProficao() {
+        return proficao;
+    }
 
-  public void setProficao(String proficao) {
-    this.proficao = proficao;
-  }
+    public void setProficao(String proficao) {
+        this.proficao = proficao;
+    }
 
     public List<Imovel> getImoveis() {
         return imoveis;

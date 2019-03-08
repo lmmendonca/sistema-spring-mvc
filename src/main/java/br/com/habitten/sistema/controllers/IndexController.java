@@ -8,17 +8,17 @@ public class IndexController {
 
 
     @RequestMapping("/")
-    String index(){
+    String index() {
         return "login";
     }
 
     @RequestMapping("/login")
-    String login(){
+    String login() {
         return "login";
     }
 
     @RequestMapping("/relatorioVendas")
-    String relatorioVendas(){
+    String relatorioVendas() {
         return "vendas/relatorioVendas";
     }
 

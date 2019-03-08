@@ -14,5 +14,5 @@ export default {
   format: "umd",
   dest: "lib/codemirror.js",
   moduleName: "CodeMirror",
-  plugins: [ buble({namedFunctionExpressions: false}) ]
+  plugins: [buble({namedFunctionExpressions: false})]
 };

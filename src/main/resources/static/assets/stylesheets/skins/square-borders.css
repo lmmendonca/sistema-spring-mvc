@@ -100,7 +100,7 @@ html .panel .panel-heading-transparent + .panel-body,
 .input-group-icon input.form-control:last-child,
 .input-search input.form-control:first-child,
 .input-search input.form-control:last-child {
-	border-radius: 0;
+    border-radius: 0;
 }
 
 .body-sign .panel-sign .panel-title-sign .title,
@@ -179,22 +179,22 @@ p.drop-caps.secondary:first-child::first-letter,
 html.boxed .inner-wrapper,
 html.boxed .header,
 html.boxed .content-body {
-	border-radius: 0;
+    border-radius: 0;
 }
 
 @media (min-width: 768px) {
-	.nav-tabs.nav-justified > li > a,
-	.nav-tabs-justified > li > a,
-	.navbar {
-		border-radius: 0;
-	}
+    .nav-tabs.nav-justified > li > a,
+    .nav-tabs-justified > li > a,
+    .navbar {
+        border-radius: 0;
+    }
 }
 
 @media (max-width: 479px) {
-	.tabs .nav.nav-tabs.nav-justified li:first-child a,
-	.tabs .nav.nav-tabs.nav-justified li:first-child a:hover,
-	.tabs.tabs-bottom .nav.nav-tabs.nav-justified li:last-child a,
-	.tabs.tabs-bottom .nav.nav-tabs.nav-justified li:last-child a:hover {
-		border-radius: 0;
-	}
+    .tabs .nav.nav-tabs.nav-justified li:first-child a,
+    .tabs .nav.nav-tabs.nav-justified li:first-child a:hover,
+    .tabs.tabs-bottom .nav.nav-tabs.nav-justified li:last-child a,
+    .tabs.tabs-bottom .nav.nav-tabs.nav-justified li:last-child a:hover {
+        border-radius: 0;
+    }
 }

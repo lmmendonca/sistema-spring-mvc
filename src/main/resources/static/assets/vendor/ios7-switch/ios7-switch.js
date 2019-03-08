@@ -23,7 +23,7 @@ function Switch(input) {
  * Cross Browser add class method
  */
 
-Switch.addClass = function( el, className) {
+Switch.addClass = function (el, className) {
   if (el.classList) {
     el.classList.add(className);
   } else {
@@ -35,7 +35,7 @@ Switch.addClass = function( el, className) {
  * Cross Browser remove class method
  */
 
-Switch.removeClass = function( el, className) {
+Switch.removeClass = function (el, className) {
   if (el.classList) {
     el.classList.remove(className);
   } else {
@@ -47,7 +47,7 @@ Switch.removeClass = function( el, className) {
  * Cross Browser has class method
  */
 
-Switch.hasClass = function(el, className) {
+Switch.hasClass = function (el, className) {
   if (el.classList) {
     return el.classList.contains(className);
   } else {
@@ -59,9 +59,9 @@ Switch.hasClass = function(el, className) {
  * Toggles on/off state
  */
 
-Switch.prototype.toggle = function() {
+Switch.prototype.toggle = function () {
 
-  if( Switch.hasClass(this.el, 'on') ){
+  if (Switch.hasClass(this.el, 'on')) {
     this.turnOff();
   } else {
     this.turnOn();
@@ -75,7 +75,7 @@ Switch.prototype.toggle = function() {
  * Turn on
  */
 
-Switch.prototype.turnOn = function() {
+Switch.prototype.turnOn = function () {
   Switch.addClass(this.el, 'on');
   Switch.removeClass(this.el, 'off');
   this.input.checked = true;
@@ -85,7 +85,7 @@ Switch.prototype.turnOn = function() {
  * Turn off
  */
 
-Switch.prototype.turnOff = function() {
+Switch.prototype.turnOff = function () {
   Switch.removeClass(this.el, 'on');
   Switch.addClass(this.el, 'off');
   this.input.checked = false;
@@ -96,8 +96,8 @@ Switch.prototype.turnOff = function() {
  * Triggers DOM event programatically on the real input field
  */
 
-Switch.prototype.triggerChange = function() {
-  if ("fireEvent" in this.input){
+Switch.prototype.triggerChange = function () {
+  if ("fireEvent" in this.input) {
     this.input.fireEvent("onchange");
   } else {
     var evt = document.createEvent("HTMLEvents");
@@ -110,7 +110,7 @@ Switch.prototype.triggerChange = function() {
  * We need to prepare some DOM elements
  */
 
-Switch.prototype._prepareDOM = function() {
+Switch.prototype._prepareDOM = function () {
 
   var onBackground = document.createElement('div');
   onBackground.className = 'on-background background-fill';

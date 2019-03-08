@@ -4,18 +4,18 @@ Written by: 	Okler Themes - (http://www.okler.net)
 Theme Version: 	1.7.0
 */
 
-(function($) {
+(function ($) {
 
-	'use strict';
+  'use strict';
 
-	var datatableInit = function() {
+  var datatableInit = function () {
 
-		$('#datatable-default').dataTable();
+    $('#datatable-default').dataTable();
 
-	};
+  };
 
-	$(function() {
-		datatableInit();
-	});
+  $(function () {
+    datatableInit();
+  });
 
 }).apply(this, [jQuery]);
